@@ -1,20 +1,22 @@
 # FancyButtons
 
-![FancyButtons Android](https://raw.github.com/medyo/fancybuttons/master/screenshots/fancy.png)![FancyButtons Android](/screenshots/fancy2.png)
+![FancyButtons Android](/resources/fancy.png)![FancyButtons Android](/resources/fancy2.png)![FancyButtons Android](/resources/fancy3.png)
 
-#### I always found some difficulties to make great Android buttons, since i need to override everything or make lot of drawables files to handle focus, pressed and normal state. For that reason, i made Fancy Buttons, to make this task much easier.
+#### I've always found some difficulties to make great Android buttons, since I need to override everything or make lot of drawables files to handle focus, pressed and normal states. For that reason, I made Fancy Buttons, to make this redundant task much easier.
 
 ## Overview
 **FancyButtons**, helps you to easily create fancy buttons without the need of drawable files.
 
-![FancyButtons Android](https://raw.github.com/medyo/fancybuttons/master/screenshots/no-drawables.png)
+![FancyButtons Android](https://raw.github.com/medyo/fancybuttons/master/resources/no-drawables.png)
+
+### Demo Application : [Download APK](https://raw.github.com/medyo/fancybuttons/master/resources/fancybuttons_samples.apk)
 
 ## Features
 
 * Border (stroke, radius, color)
 * Background (normal, focus)
 * Icon (Drawable, font icon)
-	* FontAwsome
+	* FontAwesome
 	* Custom font
 * Icon (Position, size)
     * right
@@ -24,9 +26,10 @@
 * Icon Size
 * Icon Padding
 
+
 ### Including in your project : Maven Central
 
-	compile 'com.github.medyo:fancybuttons:1.4@aar'
+	compile 'com.github.medyo:fancybuttons:1.5@aar'
 
 ### Usage
 
@@ -79,31 +82,31 @@
 
 **1 - Spotify Button**  
 
-![FancyButton Spotify](https://raw.github.com/medyo/fancybuttons/master/screenshots/spotify-button.png)  
+![FancyButton Spotify](https://raw.github.com/medyo/fancybuttons/master/resources/spotify-button.png)  
 
 	<mehdi.sakout.fancybuttons.FancyButton
-	android:id="@+id/btn_spotify"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:paddingBottom="10dp"
-	android:paddingLeft="20dp"
-	android:paddingRight="20dp"
-	android:paddingTop="10dp"
-	fancy:fb_borderColor="#FFFFFF"
-	fancy:fb_borderWidth="1dp"
-	fancy:fb_defaultColor="#7ab800"
-	fancy:fb_focusColor="#9bd823"
-	fancy:fb_fontIconResource="&#xf04b;"
-	fancy:fb_iconPosition="left"
-	fancy:fb_radius="30dp"
-	fancy:fb_text="SHUFFLE PLAY"
-	fancy:fb_textColor="#FFFFFF" />
+		android:id="@+id/btn_spotify"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingBottom="10dp"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:paddingTop="10dp"
+		fancy:fb_borderColor="#FFFFFF"
+		fancy:fb_borderWidth="1dp"
+		fancy:fb_defaultColor="#7ab800"
+		fancy:fb_focusColor="#9bd823"
+		fancy:fb_fontIconResource="&#xf04b;"
+		fancy:fb_iconPosition="left"
+		fancy:fb_radius="30dp"
+		fancy:fb_text="SHUFFLE PLAY"
+		fancy:fb_textColor="#FFFFFF" />
 
 **2 - Facebook Button**
 
-![FancyButton Facebook](https://raw.github.com/medyo/fancybuttons/master/screenshots/facebook-button.png)  
+![FancyButton Facebook](https://raw.github.com/medyo/fancybuttons/master/resources/facebook-button.png)  
 
-    FancyButton facebookLoginBtn = new FancyButton(this);
+	FancyButton facebookLoginBtn = new FancyButton(this);
     facebookLoginBtn.setText("Login with Facebook");
     facebookLoginBtn.setBackgroundColor(Color.parseColor("#3b5998"));
     facebookLoginBtn.setFocusBackgroundColor(Color.parseColor("#5474b8"));
@@ -129,6 +132,10 @@ Fancybuttons is delivered with :
 **How to add new fonts ?**  
 Just Paste your font inside `assets/fonts/` folder for Text fonts or inside `assets/iconfonts/` for icon fonts eg : entypo
 
+## Contributions
+Fancybuttons needs you to build the missing features :
+* Supporting Circular buttons 
+* Supporting Lollipop Ripple effect
 
 ### Licence
 

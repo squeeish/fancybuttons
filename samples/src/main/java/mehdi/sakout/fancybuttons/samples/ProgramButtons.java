@@ -3,6 +3,7 @@ package mehdi.sakout.fancybuttons.samples;
 import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
@@ -11,7 +12,7 @@ import android.widget.LinearLayout;
 import mehdi.sakout.fancybuttons.FancyButton;
 
 
-public class ProgramButtons extends ActionBarActivity {
+public class ProgramButtons extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +71,7 @@ public class ProgramButtons extends ActionBarActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        
+
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.program_buttons, menu);
         return true;
